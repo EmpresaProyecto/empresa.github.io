@@ -55,7 +55,7 @@
     align: center;
 }
 .contenedor .contenedor-items .item:hover{
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px white;
     scale: 1.05;
 }
 .contenedor .contenedor-items .item .titulo-item{
