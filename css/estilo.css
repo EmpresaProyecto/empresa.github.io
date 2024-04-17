@@ -18,13 +18,14 @@
     margin-top: 50px;
 }
 .contenedor{
-    max-width: 1300px;
+    max-width: 1200px;
     padding: 10px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     /* oculto lo que queda fuera del .contenedor */
     contain: paint;
+    cursor: inherit;
 }
 /* SECCION CONTENEDOR DE ITEMS */
 .contenedor .contenedor-items{
@@ -39,7 +40,7 @@
     transition: .3s;
 }
 .contenedor .contenedor-items .item{
-    max-width: 800px;
+    max-width: 1000px;
     overflow: hidden;
     margin: auto;
     border: none solid #FFFFFF;
@@ -48,9 +49,10 @@
     transition: .3s;
 }
 .contenedor .contenedor-items .item .img-item{
-    width: 100%;
+    width: 50%;
     height: 100%;
     object-fit: cover;
+    align: center;
 }
 .contenedor .contenedor-items .item:hover{
     box-shadow: 0 0 10px black;
@@ -61,6 +63,7 @@
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 0;
 }
 .contenedor .contenedor-items .item .precio-item{
     display: block;
