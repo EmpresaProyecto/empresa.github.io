@@ -1,6 +1,4 @@
-
-
-
+/*Hoja de estilo principal de todas las paginas*/
 header {
 	position: fixed;
 	top: 0;
@@ -276,7 +274,7 @@ margin-left: 150px}
     .btn:hover::before {
       width: 100%;
     }
-
+/*fuentes para la informacion mostrada*/
 
         #fuente1{
     	font-size: 25.5px;
@@ -339,6 +337,7 @@ margin-left: 150px}
     text-align: center;
     margin-top: 5px;
 }
+/*parte del diseño del pie de pagina*/
 .footer{
     padding: 50px 0;
     background-color: black;
@@ -363,6 +362,7 @@ margin-left: 150px}
     display: block;
     margin-bottom: 10px;
  }
+/*Tablas utilizadas para informacion*/
 .table-container {
     overflow-x: auto;
     margin: 20px;
@@ -381,6 +381,7 @@ aling: center;
     padding: 8px;
     text-align: left;
 }
+/*Contenedores de productos*/
 .contenedor2 {
 	max-width: 500px;
 	margin: 100px auto;
@@ -407,6 +408,7 @@ aling: center;
 	font-family: fuente/fenix-regular;
 	font-size: 1em;
 }
+/*Secciones del menu de productos*/
 .blog{
     display: flex;
 	font-family: fuete/Fenix-Regular;
@@ -444,6 +446,8 @@ aling: center;
 	 text-aling: justify;
 	 aling: left;
  }
+
+/*parte responsiva de los diseños utilizados*/
 @media (max-width: 600px) {
     .responsive-table {
         display: block;
