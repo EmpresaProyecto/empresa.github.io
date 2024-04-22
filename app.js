@@ -1,7 +1,7 @@
-//Variable para que el carrito se vea 
+//Variable del carrito para que aparezca
 var carritoVisible = false;
 
-//Espermos que todos los elementos de la pàgina cargen para ejecutar el script
+//Carga de los elementos de la pagina para que se ejecute las funciones de javaScript
 if(document.readyState == 'loading'){
     document.addEventListener('DOMContentLoaded', ready)
 }else{
@@ -10,14 +10,14 @@ if(document.readyState == 'loading'){
 
 function ready(){
     
-    //Funcionalidad de eliminar del carrito 
+    //Funcion de eliminar productos del carrito
     var botonesEliminarItem = document.getElementsByClassName('btn-eliminar');
     for(var i=0;i<botonesEliminarItem.length; i++){
         var button = botonesEliminarItem[i];
         button.addEventListener('click',eliminarItemCarrito);
     }
 
-    //funcionalidad del boton sumar cantidad
+    //Funcion del boton sumar cantidad
     var botonesSumarCantidad = document.getElementsByClassName('sumar-cantidad');
     for(var i=0;i<botonesSumarCantidad.length; i++){
         var button = botonesSumarCantidad[i];
@@ -25,14 +25,14 @@ function ready(){
         
     }
 
-     //funcionalidad al buton restar cantidad
+     //Funcion al buton restar cantidad
     var botonesRestarCantidad = document.getElementsByClassName('restar-cantidad');
     for(var i=0;i<botonesRestarCantidad.length; i++){
         var button = botonesRestarCantidad[i];
         button.addEventListener('click',restarCantidad);
     }
 
-    // funcionalidad al boton Agregar al carrito
+    // Funcioon del boton Agregar al carrito
     var botonesAgregarAlCarrito = document.getElementsByClassName('boton-item');
     for(var i=0; i<botonesAgregarAlCarrito.length;i++){
         var button = botonesAgregarAlCarrito[i];
@@ -54,7 +54,7 @@ function pagarClicked(){
     actualizarTotalCarrito();
     ocultarCarrito();
 }
-//Funciòn que controla el boton de agregar al carrito
+//Funcion que controla el boton de agregar al carrito
 function agregarAlCarritoClicked(event){
     var button = event.target;
     var item = button.parentElement;
@@ -117,7 +117,7 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc){
     //Agregamos la funcionalidad eliminar al nuevo item
      item.getElementsByClassName('btn-eliminar')[0].addEventListener('click', eliminarItemCarrito);
 
-    //Agregmos al funcionalidad restar cantidad del nuevo item
+    //Agregamos al funcionalidad restar cantidad del nuevo item
     var botonRestarCantidad = item.getElementsByClassName('restar-cantidad')[0];
     botonRestarCantidad.addEventListener('click',restarCantidad);
 
@@ -158,11 +158,11 @@ function eliminarItemCarrito(event){
     //Actualizamos el total del carrito
     actualizarTotalCarrito();
 
-    //la siguiente funciòn controla si hay elementos en el carrito
+    //la siguiente funcion controla si hay elementos en el carrito
     //Si no hay elimino el carrito
     ocultarCarrito();
 }
-//Funciòn que controla si hay elementos en el carrito. Si no hay oculto el carrito.
+//Funcion que controla si hay elementos en el carrito. Si no hay oculto el carrito.
 function ocultarCarrito(){
     var carritoItems = document.getElementsByClassName('carrito-items')[0];
     if(carritoItems.childElementCount==0){
