@@ -2,7 +2,7 @@ document.querySelector("#submit").addEventListener("click", e => {
   e.preventDefault();
 
   //INGRESE UN NUMERO DE WHATSAPP VALIDO AQUI:
-  const telefono = "5518667044";
+  const telefono = "5610181667";
 //Todos los datos ingresados se guardaran aqui
   const cliente = document.querySelector("#cliente").value;
   const fecha = document.querySelector("#fecha").value;
@@ -15,7 +15,7 @@ document.querySelector("#submit").addEventListener("click", e => {
   resp.classList.remove("send");
 //Te manda al numero de whassapp valido ingresado
 //Se muestran las variables ingresadas que guardan la informacion
-  const url = `https://api.whatsapp.com/send?phone=$5518667044}&text=
+  const url = `https://api.whatsapp.com/send?phone=$5610181667}&text=
 		*Cotizaciones de*%0A
 		*Productos*%0A%0A
 		*¿Cuál es tu nombre?*%0A
